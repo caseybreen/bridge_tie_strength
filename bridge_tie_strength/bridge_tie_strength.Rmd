@@ -1,0 +1,55 @@
+---
+title: |
+  | Strength of Weak Ties 
+  | Evidence from Multiple Villages
+  | A simulation study
+  
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+
+author: |
+  | Casey Breen 
+
+# for rticles::asa_article
+# to produce blinded version set to 1
+#blinded: 0
+
+# for rticles::asa_article
+#authors: 
+#- name: Dennis M. Feehan
+#  #thanks: The authors gratefully acknowledge ...
+#  affiliation: UC Berkeley
+#  
+#- name: Casey Breen
+#  affiliation: UC Berkeley
+
+# for rticles::asa_article
+#abstract: |
+#  The text of your abstract.  200 or fewer words.
+
+#linestretch: 1.5
+linestretch: 1.2
+
+bibliography: bridge_strength.bib
+#output: rticles::asa_article
+output: pdf_document
+fontsize: 11pt
+header-includes:
+  \usepackage{subfig}
+nocite: '@*'
+---
+
+## Introduction 
+
+The theory of weak ties puts forth that are aquaintances (weak ties) are more likely to be the the crucial ties (bridges) that connect two individuals from distinct closely-knitted social groups. In this capactity, the bridges serve as an important way for simple contagions to spread within a network. This paper investigates the strength of local bridges within a series of 74 networks of social connection in Indian villages, using two distinct definitions of a tie strength. Empirical evidence is found in support of the theory that bridges are disporportianately weak ties.
+
+Central to Granovetter (1973) theory of weak ties is the idea that bridges are important channels for the flow of communication within networks. He claims that local bridges, unlike the strong ties within tightly-knit clusters, tend to be disproportiantely weak ties. This paper assess the claim that weak ties are bridges, finding strong evidence that bridges are disproportianately weak ties.
+
+Past work has empirially shown that bridge are weak ties. Friedkin (1980) collected analyzed a social network of biologists, finding support for Granovetters theory. The importance of bridges is debated, but there has been considerable evidence that information diffuses through weak ties. 
+
+## Data
+
+I analyze a set of 75 social networks collected in Southern India. The data was first obtained by Banerjee et al. to map out ties 
+
+
+# References
+
