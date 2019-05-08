@@ -48,7 +48,7 @@ Past work has empirially shown that bridge are weak ties. Friedkin (1980) collec
 
 ## Data
 
-I analyze a set of 75 social networks collected in Southern India. The data was first obtained by Banerjee et al. to map out ties 
+I analyze a set of 75 social networks collected in Southern India first collected by Banerjee et al. (2013) to assess the diffusion of microfinance products. The 75 networks, collected across 5 districts in Karnataka, are a median distance of 46 kilometers apart from their closest neighboring village [@gee_paradox_2017]. 
 
 
 # References
