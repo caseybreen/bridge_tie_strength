@@ -73,8 +73,15 @@ An additional module was administered to a sample of those individuals asking ab
 
 ## Methods
 
-Two distinct definitions of tie strength were used in this analysis. The first definition of tie stength is 
+Two distinct definitions of tie strength were used in this analysis. The first definition of tie stength is was a measure of the count of the number of distinct social relationships  between two persons, as per @Mattie. If person A gave medical advice, borrowed money from, and engaged socially with person B, the strength of the tie between them $T_s = 3$. This definition of tie strength ranging from 0, where people have no shared connections, to 12, where people are connected along every social dimension. Tie strength is always reciprocal, as the network is undirected. A high proportion of the population is connected along every social dimension
 
+Definition 1 of tie strength, while incorporating all information, is not without drawbacks. Their has been much discussion on how best to define tie strength [@Gilbert, @Marsden, @Granovetter]. While @Granovetter seminal work measured tie strength as frequency of contact between two individuals, introducing his theory that tie strength is a combination of amount of time, the emotional intensity, intimacy, and reciprocal services @Granovetter. Additionally, he included a pertinent discussion of whether tie strength should be operate as a binary weak vs. strong or whether a continous measure of tie strength would be more appropriate. Several additional asepcts of of tie strength have been introduced, namely social distance and structure within network topology @Lin. 
+
+A second measure of tie strength was calculated to reduce redundancy within a network. The first definition, while making use of all social relationships, has two main shortcomings. The first is that all social relationships are weighted the same. It is hard to believe that "lending rice or keroscene" and "being related" make equal contributions to the strength of a tie between two individuals. 
+
+The second qualm of the first tie definition double-counting: certain highly-correlated variables are asked about twic (lend and borrow money, give advice or receieve advice), while other questions are only asked once. This leads to a measure of reciprocated borrowing/lending count twice, while being related only counting once. 
+
+To address these two concerns, I 
 
 
 
