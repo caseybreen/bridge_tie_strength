@@ -48,7 +48,34 @@ Past work has empirially shown that bridge are weak ties. Friedkin (1980) collec
 
 ## Data
 
-I analyze a set of 75 social networks collected in Southern India first collected by Banerjee et al. (2013) to assess the diffusion of microfinance products. The 75 networks, collected across 5 districts in Karnataka, are a median distance of 46 kilometers apart from their closest neighboring village [@gee_paradox_2017]. 
+I analyze a set of 75 social networks collected in Southern India first collected by Banerjee et al. (2013) to assess the diffusion of microfinance products. The 75 networks, collected across 5 districts in Karnataka, are a median distance of 46 kilometers apart from their closest neighboring village [@gee_paradox_2017]. The data was collected within each village under the assumption that each village was a distinct system, and network data was collected within villages and not between them. 
+
+First, a household-level census was administered collecting data on characteristics of the household (roof type, access to electricity, etc.) and information on household head. The household census did not collect information on social networks. After the household-level census was completed, an individual questionnaire was administered in each village. Individual questionnaires were administered to households with a woman   between ages 18-50. The individual level questionnaire was administered in all Christian and Muslim households, and Hindu househoulds were clustered by geography and then 50% of households were randomly sampled. Once elegible households were selected, the individual questionnaire was administered to the household head, the spouse of the household head, other women ages 18-50, and their spouses. 
+
+The individual questionnaire contained a module asking respondents about 12 different dimensions of social relationships: 
+
+1. Borrow money from
+2. Give advice to
+3. Help with a decision
+4. Borrow kerosene or rice from
+5. Lend kerosene or rice to
+6. Lend money to
+7. Obtain medical advice from
+8. Engage socially with
+9. Are related to
+10. Go to temple with
+11. Invite to one's home
+12. Visit in another's home
+
+An additional module was administered to a sample of those individuals asking about age, religion, caste, etc. 
+
+@Banarjee created used the information collected on the social relationship module to create a set of 74 undirected networks, one for each village. The decision to create an undirected network was made as the authors were primarily interested in communication, TODO. So, a certain tie exists between two individuals even if only one individual reports that social relationship. Reciprocity is an important component of any relationship, and defintiely an important component of measuring tie strength, so obtaining a directed version of this dataset could be valuable. 
+
+## Methods
+
+Two distinct definitions of tie strength were used in this analysis. The first definition of tie stength is 
+
+
 
 
 # References
