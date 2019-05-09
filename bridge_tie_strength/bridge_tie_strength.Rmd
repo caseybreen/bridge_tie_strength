@@ -79,9 +79,30 @@ Definition 1 of tie strength, while incorporating all information, is not withou
 
 A second measure of tie strength was calculated to reduce redundancy within a network. The first definition, while making use of all social relationships, has two main shortcomings. The first is that all social relationships are weighted the same. It is hard to believe that "lending rice or keroscene" and "being related" make equal contributions to the strength of a tie between two individuals. 
 
-The second qualm of the first tie definition double-counting: certain highly-correlated variables are asked about twic (lend and borrow money, give advice or receieve advice), while other questions are only asked once. This leads to a measure of reciprocated borrowing/lending count twice, while being related only counting once. 
+The second qualm of the first tie definition double-counting: certain highly-correlated variables are asked about twice (lend and borrow money, give advice or receieve advice), while other questions are only asked once. This leads to a measure of reciprocated borrowing/lending count twice, while being related only counting once. Further, there may be redundancy between these certain 
 
-To address these two concerns, I 
+To address these two concerns, I use k-means clustering to find the social dimensions with the most redundancy. I collected all dyads in the 75 villages, meaning there were 12 potential ties between two individuals. Then I removed all null-dyads (no connection for any social relationship between two individuals) and conducted the principal component analysis (PCA) to
+reduce the number of dimensions of the data. PCA was perfomed by computing the correlation matrix of the 12 social relationships within the dyad matrix and taking the eigenvectors of the correlation matrix. No normalization was perfomed as all data was already binary for either having a tie or not. The PCA dimension reduction found a very high propotion of the variance could be explained by the first principal component, hinting that having any social relationship was a strong predictor of having any other social relationship. PCA was performed prior to k-means clustering to ensure 
+
+PCA was first conducted to reduce the dimensionality, and then a sillhouette analysis was conducted to determine the optimum number of clusters for k-means clustering. Sillhouette analysis provided a graphical interpretation for which social dimensions lie well within a cluster and which are bordeline cases. Further, it allows for the selection of am "appropriate" number of clusters. In this case, the sillhouette analysis recommended 4 clusters. A k-means clustering was performed upon the principle components to lump the 12 different social relationships into following clusters were found: 
+
+| Cluster 1 	| Cluster 2 	| Cluster 3 	| Cluster 4 	|
+|------------	|----------------------------	|--------------------------	|----------------------------	|
+| Related to 	| Borrow money from 	| Visit in another's home  	| Borrow kerosene or rice to 	|
+|  	| Lend money to 	| Invite to one's home 	| Lend kerosene or rice to 	|
+|  	| Help with a decision 	| Engage socially with 	|  	|
+|  	| Obtain medical advice from 	|  	|  	|
+|  	| Go to temple with 	|  	|  	|
+|  	| Give advice to 	|  	|  	|
+
+
+Once the clusters were found, a measure of tie strength was created. Cluster 1 represents to family / kin, Cluster 2 represents to those an individual would discuss important matters with, Cluster 3 represents a traditional friendship, and Cluster 4 represents a casual acquaintance. I measure tie strenght as the number of distinct categories a social ties enters. For example, if an individual has a tie in Cluster 2 and a tie in Cluster 4, they would have a tie strength of 2. This definition of a tie strength is also far from perfect, as it seemingly weights being related (Cluster 1) and having serious converstations (Cluster 4), but it represents a very distinct way of measuring tie strength that promotes robustness. 
+
+To identify bridges and local bridges within the the 75 village networks, every edge was was removed and the distance between its two endpoints was calculated. A local bridge was defined as any edge, which if deleted resulted in distance of more than 2 (the endpoints had no shared common neighbor). The span of a local bridge was defined as the total number of steps between the two endpoints if the edge was deleted. A bridge occured when removing a tie resulted in the creation of a new component. 
+
+
+## Results 
+
 
 
 
