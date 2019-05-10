@@ -112,7 +112,7 @@ To identify bridges and local bridges within the the 75 village networks, every 
   \label{fig:tp}
 \end{figure}
 
-In the entire network, the mean of the tie strength (definition 1) of the 294,626 nodes was 8.01 (95% confidence interval 7.99-8.03), with a median tie strength of 12, indicating a high proportion of individuals connected on every social dimension. As expected, for ties that were neither bridges nor local bridges were the strongest, with a mean tie strength of 8.48 with a standard error of 0.0089. Tie strength greatly decreased for local bridges, with a mean tie strength of 2.805222 (95% CI: 2.74-2.87). Tie strength varies slightly within local bridges of span 3, 4, and 5. It appears that the tie stength slighly increases for local bridges of span 6 and 7, but the sample size are too small to say definitely whether these increases are significant.
+In the entire network, the mean of the tie strength (definition 1) of the 294,626 nodes was 8.01 (95% confidence interval 7.99-8.03), with a median tie strength of 12, indicating a high proportion of individuals connected on every social dimension. As expected, for ties that were neither bridges nor local bridges were the strongest, with a mean tie strength of 8.48 with a standard error of 0.0089. Tie strength greatly decreased for local bridges, with a mean tie strength of 2.805 (95% CI: 2.74-2.87). Tie strength varies slightly within local bridges of span 3, 4, and 5. It appears that the tie stength slighly increases for local bridges of span 6 and 7, but the sample size are too small to say definitely whether these increases are significant.
 
 
 | Bridge Type|Count|Mean Tie Strength Def. 1 (max 12)|Mean Tie Strength Def. 2 (max 4)|     SE Def. 1|      SE Def. 2|
@@ -129,14 +129,40 @@ Table: Count, mean tie strength, and standard errors for definition 1 and defini
 
 The mean tie strength of bridges is significantly higher than the tie strength of local bridge (p < 0.01). This runs counter to Granovetter's strength of weak ties theory. Intuitively, bridges should be even weaker ties, on average, than local bridges, as both endpoints share no friends, or friends of friends.
 
-I hypothesize three reasons for the counter intuitive finding: 1) bridges over time become stronger ties as they control the flow of information between these two groups 2) Bridges are disproportiantely stronger ties are they are predominantly ways for members socially isolated from the group to be connected to the giant component and 3) Migration creates bridges temporarily before they are more broadly integrated into society.
+I hypothesize three reasons for the counter intuitive finding: 1) Bridges are disproportiantely stronger ties are they are predominantly ways for members socially isolated from the group to be connected to the giant component and 2) Bridges over time become stronger ties as they control the flow of information between these two groups 3) Migration creates bridges temporarily before they are more broadly integrated into society. Hypothesis 2 and hypothesis 3 cannot be answered with current cross-sectional data. While migration data was collected for a subsample of idnviduals (~20%), there is no way to asses whether migration 
 
-Hypothesis 1: *Bridges are formed between social isolated components and a larger giant component, and hence are stronger ties as they are important channels for the flow of information, norms, and behavior between a smaller, otherwise isolated community and the larger giant component of the network.* 
+Hypothesis 1: *Bridges are often formed between a smaller, social isolated component and the giant component of a given social network. These ties must be stronger ties as they are important channels for the flow of information, norms, and behavior between a smaller, otherwise isolated community and the larger giant component of the network.* '
 
+\begin{figure}
+  \centering
+  \subfloat[\label{fig:tp01}]{\includegraphics[width=5.5in]{../illustrations/component_size_bridges.png}}
+  \hspace{15mm}
+  \caption{The distribution of the smaller components for the endpoints of a bridge. }
+  \label{fig:tp}
+\end{figure}
+
+For each bridge, by definition the endpoints of the edge belong to two seperate components if that edge is removed. I hypothesized that on of these endpoints would fall within a giant component of a network, and one of these endpoints would fall within a much smaller component. In other words, if the tie between two individuals is a bridge, one individual will be connected to the giant component and the other will belong to a small socially isolated cluster. 
+
+Figure 3 shows the distribution of the smaller of the two components formed when a bridge is removed, and the maximum size of the smaller of the two components is 12, confirms that all bridges have a smaller socially isolated component. To assess whether bridges generally between a giant component and a socially isolate group, I categorized each bridge as having an endpoint in the giant component if the bridge was deleted, one component had a component of size 341 or great (the smallest number of nodes in one village's giant component was 342). Table 3 shows the count of bridges between an individual in the giant component and an individual within a social cluster. The majority of bridges (85.6%) occur between an individual in an otherwise socially isolated component and an individual in the giant component. Bridges between individuals in socially isolated groups occur generally exclusively between those related to one another, and are always strong ties. The bridges between the giant component and socially isolated component are still significantly stronger ties on average than local bridges, connected on an average of 6.21 social relationships compared to only 2.81 social relationships for local bridges 
+
+| One Endpoint in Giant Component | Tie Strength| n|
+|------------------:|------------:|-----:|
+|                  Yes|    12|   167|
+|                  No |     6.21|   976|
+
+Table: Bridge Tie Strength of the Giant Component
 
 ## Discussion
 
-The results displayed table 2 are broadly consistent with Granovetter's Strength of Weak ties theory, with local bridges exhibiting disporportiantely weaker tie strength across both tie strengths. While both measures of tie strength were constructed quite differently, results are consistent. Evidence was also found that, while not necessarily in direct contrast with Granovetter's theory, did not support it. Slight variation was found within tie strength of span, but sample sizes were too small to find statisitically significant evidence. Bridges themselves were significantly stronger ties than local bridges, which ran counter to Granovetter's theory.  
+The results displayed table 2 are broadly consistent with Granovetter's Strength of Weak ties theory, with local bridges exhibiting disporportiantely weaker tie strength across both tie strengths. Two seperate measures of tie strength were constructed, but results are consistent for both definitions. Slight variation was found within tie strength of span of local bridges, but sample sizes were too small to find statisitically significant evidence.
+
+The most interesting finding was that bridges themselves were significantly stronger ties than local bridges. Bridges generally occurred (85%) between individuals in the giant component of a given village's social network and were signficantly stronger ties than local bridges. This could hint that isolated individualls for whom one social tie connects their smaller, isolated component to the larger giant component rely on that tie more so to gain knowledge about informations, norms, and behavior happening in the giant component. In this sense, the value of the tie itself ensures that is is stronger ties, while the same is not true for local bridges as both individuals are likely to be in the giant component and will have other pathways for receiving information and norms.  
+
+Evidence is found in support of Granovetter's Strength of Weak Ties that bridges and local bridges are disproportinately weak ties. Additional evidence is found that these dynamics change 
+
+
+
+\newpage
 
 
 # References
