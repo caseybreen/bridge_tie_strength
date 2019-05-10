@@ -158,7 +158,11 @@ The results displayed table 2 are broadly consistent with Granovetter's Strength
 
 The most interesting finding was that bridges themselves were significantly stronger ties than local bridges. Bridges generally occurred (85%) between individuals in the giant component of a given village's social network and were signficantly stronger ties than local bridges. This could hint that isolated individualls for whom one social tie connects their smaller, isolated component to the larger giant component rely on that tie more so to gain knowledge about informations, norms, and behavior happening in the giant component. In this sense, the value of the tie itself ensures that is is stronger ties, while the same is not true for local bridges as both individuals are likely to be in the giant component and will have other pathways for receiving information and norms.  
 
-Evidence is found in support of Granovetter's Strength of Weak Ties that bridges and local bridges are disproportinately weak ties. Additional evidence is found that these dynamics may change when the bridges occur between socially isolated groups and between socially isolated groups and 
+Evidence is found in support of Granovetter's Strength of Weak Ties that bridges and local bridges are disproportinately weak ties. However, some evidence suggests that these dynamics may change when the bridges occur between socially isolated individuals and individuals in giant component because of the greater stakes involved with that tie to the general community. 
+
+The data collection process could interefere, as individuals were not necessarily
+
+
 
 
 
